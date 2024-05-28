@@ -1,10 +1,11 @@
 {
   "name": "certificado-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "CourseHub es una plataforma para almacenar y gestionar cursos en línea, similar a Udemy. Este repositorio contiene únicamente el backend de la aplicación, construido con Node.js y Express.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "keywords": [],
   "author": "",
