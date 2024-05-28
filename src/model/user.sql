@@ -11,4 +11,3 @@ CREATE TABLE "users" (
   foreign key (role_id) references role(role_id),
   foreign key (department_id) references department(department_id)
 );
-
