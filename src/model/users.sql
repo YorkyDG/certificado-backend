@@ -9,5 +9,8 @@ CREATE TABLE "users" (
   "role_id" varchar NOT NULL,
   "department_id" varchar NOT NULL,
   foreign key (role_id) references role(role_id),
-  foreign key (department_id) references department(department_id)
+  foreign key (department_id) references department(department_id),
 );
+  INSERT INTO users(
+        user_id, user_username, user_fullname, user_cedula, user_email, hash_password, user_phone, role_id, department_id)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
