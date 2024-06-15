@@ -5,7 +5,7 @@ import * as bcrypt from "../helper/bcrypt.js";
 import MYSECRET from "../config.js";
 
 export const signUp = async (req, res) => {
-  const user_id = uuidv4();
+  const user_id = uuid.v4();
   const {
     uName,
     name,
